@@ -12,3 +12,5 @@ export async function startServer(): Promise<void> {
 export const stopServer = (): any => {
   server.close();
 };
+
+startServer();
