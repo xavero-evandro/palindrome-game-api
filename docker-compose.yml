@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  api:
+    container_name: "supersolid-api"
+    build: .
+    networks:
+      - backend
+    ports:
+      - "3333:3333"
+    volumes:
+      - ./:/usr/src/app
+
+networks:
+  backend:
